@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #ffffff;
+}
+
+body {
+  background: #050505;
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+  }
+}
